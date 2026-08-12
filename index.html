@@ -7,10 +7,69 @@
 </head>
 <body>
     <div class="fundo">
+        <h1>ricardo</h1>
         <div class="flista">
-            <input>
-            <button>adicionar</button>
+            <input id="ctarefas">
+            <button class="botao" onclick="adicionar()">adicionar</button>
+            <p id="rtarefas"></p>
+            <div id="lista">
+
+            </div>
         </div>
     </div>
 </body>
+<style>
+    .fundo {
+        background-image: linear-gradient(rgb(67, 15, 255),rgb(0, 0, 0));
+        height: 100vh;
+        border: none;
+        color: white;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .flista {
+        background-color: #4d2dff;
+        position: absolute;
+        top: 30%;
+        left: 40%;
+        height: 400px;
+        width: 300px;
+        border-radius: 15px;
+    }
+    .botao {
+        background-color: rgb(49, 4, 175);
+        border: none;
+        border-radius: 15px;
+        color: white;
+        cursor: pointer;
+        height: 30px;
+        width: 120px;
+        
+    }
+    .botao:hover{
+        background-color: rgb(30, 16, 43);
+    }
+    #ctarefas {
+        background-color: rgb(161, 144, 177);
+        border: none;
+        height: 30px;
+        width: 295px;
+        border-radius: 15px;
+    }
+
+    body {
+        margin: 0%;
+    }
+</style>
+<script>
+    document.getElementById("ctarefas").value
+
+    let quantidade = 0;
+
+    function adicionar() {
+        let tarefas = document.getElementById("ctarefas").value
+        document.getElementById("rtarefas").innerHTML = (tarefas);
+    }
+
+</script>
 </html>
