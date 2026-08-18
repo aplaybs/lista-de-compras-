@@ -69,6 +69,17 @@
     function adicionar() {
         let tarefas = document.getElementById("ctarefas").value
         document.getElementById("rtarefas").innerHTML = (tarefas);
+
+        quantidade++;
+        console.log(quantidade);
+
+        if (quantidade <= 6) {
+            adicionar()
+        }
+        else
+        {
+            console.log("limite atingido")
+        }
     }
 
 </script>
